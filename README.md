@@ -13,6 +13,7 @@ Added some tapdance magic for home/pgdown end/pgup
 git clone https://github.com/szwl/redox.git qmk_firmware/keyboards/redox/keymaps/szwl-2
 
 ## Tap Dance Declarations
+```C
 enum {
   TD_HOME_PGD = 0,
   TD_END_PGUP = 1
@@ -26,9 +27,10 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 // Other declarations would go here, separated by commas, if you have them
 };
 
-use as keycodes:
+//use as keycodes:
 TD(TD_HOME_PGD)
 TD(TD_END_PGUP)
+```
 
 ## Flashing
 make redox/rev1:szwl-2:avrdude
