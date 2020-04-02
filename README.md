@@ -8,6 +8,10 @@ https://docs.qmk.fm/#/keycodes
 
 Added some tapdance magic for home/pgdown end/pgup
 
+## keymap.c
+Download json file from config.qmk.fm
+In qmk_firmware dir:
+bin/qmk json2c keymap-json-file.json > /tmp/keymap.c
 
 ## Installation
 git clone https://github.com/szwl/redox.git qmk_firmware/keyboards/redox/keymaps/szwl-2
